@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="872.0" prefWidth="1543.0" style="-fx-background-color: #008081;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ems.UserHomePageController">
+   <children>
+      <ImageView fitHeight="769.0" fitWidth="1546.0" layoutX="1.0" layoutY="102.0" pickOnBounds="true">
+         <image>
+            <Image url="@event.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-5.0" prefHeight="106.0" prefWidth="1546.0" style="-fx-background-color: #A3D5FF;">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="71.0" layoutX="1406.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-user.gif" />
+               </image>
+            </ImageView>
+            <Text layoutX="648.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome User">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Text>
+            <MenuButton layoutX="1399.0" layoutY="10.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="93.0" style="-fx-background-color: transparent;">
+              <items>
+                <MenuItem fx:id="profile" mnemonicParsing="false" text="Your Profile" onAction="#handleProfileButtonAction"/>
+                <MenuItem mnemonicParsing="false" text="Settings" />
+                  <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#handleLogoutButtonAction" text="Log Out" />
+              </items>
+            </MenuButton>
+            <ImageView fitHeight="103.0" fitWidth="137.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SRP Events-logos_black.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="1322.0" layoutY="121.0" prefHeight="30.0" prefWidth="173.0" promptText="Enter Events to search" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="1199.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Events" wrappingWidth="115.46990966796875">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="31.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Popular Events">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Text>
+      <Accordion layoutX="108.0" layoutY="209.0" />
+      <Line endX="1419.39990234375" endY="-1.52587890625E-5" layoutX="108.0" layoutY="170.0" startX="-100.0" />
+      <Accordion layoutX="35.0" layoutY="197.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="214.0" prefWidth="1450.0" text="Event 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="1498.0">
+                     <children>
+                        <Text layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the heart of summer, a sprawling field transformed into a pulsating sea of music enthusiasts as the Epic Harmony Festival took center stage. Headlined by renowned artists and featuring a diverse lineup spanning genres, the festival became a melting pot of rhythm and unity. The crowd, a kaleidoscope of colors and energy, danced under the open sky as the music resonated through the air. With food trucks lining the periphery and vibrant light displays illuminating the night, the festival wasn't just a concert; it was a collective celebration of the universal language of music." wrappingWidth="1418.6196775436401">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="13.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="book1" layoutX="638.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleBookButtonAction" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: #03C04A; -fx-background-radius: 10;" text=" Book Tickets">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="214.0" prefWidth="744.0" text="Event 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="36.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In a small, dimly lit venue, friends and family clandestinely gathered to pull off the ultimate surprise for Sarah's milestone birthday. As Sarah walked in, the room erupted into cheers, confetti, and the infectious beat of her favorite tunes. The joy on her face was priceless, and the evening unfolded with laughter, heartfelt toasts, and a cascade of beautifully wrapped presents. From the meticulously planned decorations to the personalized playlist, every detail reflected the love and effort put into making this birthday celebration an unforgettable, intimate affair." wrappingWidth="1407.793730020523">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="16.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="book2" layoutX="647.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleBookButtonAction" style="-fx-background-color: #03C04A; -fx-background-radius: 10;" text="Book Tickets">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <Text layoutX="26.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Events Near You">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Text>
+      <Line endX="1406.39990234375" endY="13.60003662109375" layoutX="121.0" layoutY="539.0" startX="-94.39997863769531" startY="13.60003662109375" />
+      <Accordion layoutX="32.0" layoutY="568.0">
+         <panes>
+            <TitledPane animated="false" prefHeight="214.0" prefWidth="1450.0" text="Event 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="1498.0">
+                     <children>
+                        <Text layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the heart of summer, a sprawling field transformed into a pulsating sea of music enthusiasts as the Epic Harmony Festival took center stage. Headlined by renowned artists and featuring a diverse lineup spanning genres, the festival became a melting pot of rhythm and unity. The crowd, a kaleidoscope of colors and energy, danced under the open sky as the music resonated through the air. With food trucks lining the periphery and vibrant light displays illuminating the night, the festival wasn't just a concert; it was a collective celebration of the universal language of music." wrappingWidth="1418.6196775436401">
+                           <font>
+                              <Font name="Times New Roman" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="13.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="book3" layoutX="638.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleBookButtonAction" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: #03C04A; -fx-background-radius: 10;" text=" Book Tickets">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="214.0" prefWidth="744.0" text="Event 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="36.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In a small, dimly lit venue, friends and family clandestinely gathered to pull off the ultimate surprise for Sarah's milestone birthday. As Sarah walked in, the room erupted into cheers, confetti, and the infectious beat of her favorite tunes. The joy on her face was priceless, and the evening unfolded with laughter, heartfelt toasts, and a cascade of beautifully wrapped presents. From the meticulously planned decorations to the personalized playlist, every detail reflected the love and effort put into making this birthday celebration an unforgettable, intimate affair." wrappingWidth="1407.793730020523">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="16.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="book4" layoutX="647.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleBookButtonAction" style="-fx-background-color: #03C04A; -fx-background-radius: 10;" text="Book Tickets">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </TitledPane>
+         </panes>
+      </Accordion>
+   </children>
+</Pane>
